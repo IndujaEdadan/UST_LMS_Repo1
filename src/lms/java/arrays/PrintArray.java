@@ -1,5 +1,6 @@
 package lms.java.arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class PrintArray {
@@ -17,6 +18,7 @@ public class PrintArray {
 		}
 
 		populateArray(array1, size);
+		 
 
 		findMax(array1, size);
 
@@ -52,11 +54,12 @@ public class PrintArray {
 	private static void populateArray(int[] array1, int size) {
 
 		System.out.println("Array Elements :");
-
+		Arrays.sort(array1);
 		for (int i = 0; i < size; i++) {
 			System.out.println(array1[i]);
 		}
-
+		
+		
 	}
 
 }
